@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Common CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Custom Style CSS Only Navbar */
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #A04000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    z-index: 1;
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+header #logo{
+    flex: 1;
+    text-align: center;
+}
+#logo img{
+    width: 50px !important;
+}
+nav{
+    flex: 2;
+}
+nav ul {
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px !important;
+    font-weight: 700;
+}
+nav ul li a:hover {
+    color: brown;
+    transition-duration: 0.5s;
+}
+/* Dropdown menu with Contact Item on Navbar*/
+.dropdown-container{
+    display: inline;
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background-color: brown;
+    min-width: 120px;
+    display: none;
+}
+.dropdown-content li{
+    display: block;
+    text-align: left;
+    padding: 6px;
+    font-size: 14px;
+    margin: 6px 0px;
+}
+.dropdown-content li a{
+    font-size: 16px !important;
+}
+.dropdown-content li a:hover{
+    color: cadetblue;
+    display: block;
+}
+.dropdown-container:hover .dropdown-content{
+    display: block;
+}
+nav #iconHam{
+    color: #fff;
+    line-height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+    display: none;
+}
+
+/* Custom Style CSS Only About Me Section */
+#about-me{
+    margin-top: 10%;
+    margin-bottom: 70px;
+    background-color: #EEEEEE;
+    padding: 20px 0px;
+}
+.about-content{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.about-content img{
+    width: 200px;
+}
+.about-content h2{
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 1px 2px 2px black;
+    margin: 10px 0px;
+}
+.about-content h1{
+    font-size: 2rem;
+    color: brown;
+    text-shadow: 1px 2px 2px black;
+    margin: 10px 0px;
+}
+.about-content h4{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.about-content h5{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #312112 ;
+}
+.about-content p{
+    line-height: 1.8;
+}
+
+/* Custom Style CSS Only Skills Section */
+#skills{
+    margin-bottom: 70px;
+    padding: 20px 0px;
+}
+.skills-title{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.skills-title h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: brown;
+    margin: 10px 0px;
+}
+.cards-skills{
+    width: 75%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.card-skill{
+    box-shadow: 1px 5px 8px 1px rgb(0, 0, 0, 0.2);
+    padding: 10px 0px;
+    text-align: center;
+}
+.card-skill img{
+    width: 80%;
+}
+.card-skill-content{
+    text-align: center;
+    padding: 10px;
+}
+.card-skill-content h3 {
+    margin-top: 10px;
+    color: brown;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+}
+
+.card-skill-content h4 {
+    color: #5c5c5e;
+}
+
+.card-skill-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.card-skill-content a.button {
+    color: #fff;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 15px;
+}
+a.button:hover{
+    background-color: burlywood;
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s ease;
+}
+
+/* Custom Style CSS Only Services => Projects Section */
+
+#services{
+    border: 2px dashed green;
+    padding: 10px;
+}
+.service-title{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.service-title h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: brown;
+    margin: 10px 0px;
+}
+.service-title h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #CA6F1E;
+    margin: 10px 0px;
+}
+.service-title p{
+    text-transform: uppercase;
+    font-size: 1rem;
+    /* margin: 10px 0px; */
+    margin-bottom: 40px;
+}
+.service-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75% auto;
+}
+.title-area{
+    background-color: #CA6F1E;
+    text-align: center;
+    padding: 20px;
+
+}
+.title-area img{
+    width: 200px;
+}
+.title-area h2{
+    text-transform: uppercase;
+    color: #fff;
+}
+.service-content{
+    text-align: center;
+    background-color: #EAEDED;
+    padding: 20px;
+}
+.service-content h3{
+    text-transform: uppercase;
+    text-decoration: 2px underline brown;
+    color: brown;
+    font-size: 1.3rem;
+}
+.projects-link{
+    /* text-align: start; */
+    margin-top: 20px;
+}
+
+/* Custom Style CSS Only card Team section */
+
+#team-section{
+    margin-top: 5%;
+}
+
+.team-title{
+    text-align: center;
+}
+.team-title h1{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: brown;
+}
+
+.cards{
+    width: 75%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.card{
+    box-shadow: 1px 5px 8px 1px rgb(0, 0, 0, 0.2);
+    padding: 10px 0px;
+    text-align: center;
+}
+.card img{
+    width: 50%;
+    border: 10px solid #BFC9CA;
+    border-radius: 50%;
+}
+.card-content{
+    text-align: center;
+    padding: 10px;
+}
+.card-content h3 {
+    margin-top: 10px;
+    color: brown;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+}
+
+.card-content h4 {
+    color: #5c5c5e;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.card-content a.button {
+    color: #fff;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 15px;
+}
+a.button:hover{
+    background-color: burlywood;
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s ease;
+}
+
+/* Custom Style CSS Only Contact section */
+#contact{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #EAEDED;
+}
+.contact-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 75% auto;
+    border: 2px dotted rebeccapurple;
+    padding: 20px;
+}
+.contact-content{
+    padding: 20px;
+    background-color: #AADAFF;
+}
+.contact-content h1{
+    text-align: center;
+}
+#form label{
+     width: 150px;
+     display: inline-block;
+}
+#form input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    padding: 10px;
+    outline: none;
+}
+#form button{
+    margin-top: 20px;
+    margin-left: 165px;
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 0px 3px 2px rgb(155, 15, 15);
+    background-color: #64b1ec;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+}
+#form button:hover{
+    background-color: green;
+    color: #fff;
+    transition: 0.5s;
+}
+.textArea{
+    display: flex;
+    align-items: center;
+}
+#textarea{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    padding: 10px;
+    outline: none;
+}
+.textArea label{
+    display: inline-block;
+    margin-right: 5px;
+}
+.map-responsive{
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50%;
+    /* height: 0; */
+}
+.map-responsive iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Custom Style CSS Only Footer section */
+footer{
+    background-color: #312112;
+}
+.footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.copy-right{
+    align-self: flex-end;
+}
+.woner{
+    align-self: flex-end;
+}
+.follow-us h4{
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+}
+.follow-us i{
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.follow-us a{
+    color: #fff;
+}
+.follow-us a:hover{
+    color: rgb(213, 216, 18);
+    transition-duration: 0.5s;
+    font-size: 20px;
+}
+

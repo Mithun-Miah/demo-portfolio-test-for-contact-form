@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Common CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Custom Style CSS Only Navbar */
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #A04000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    z-index: 1;
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+header #logo{
+    flex: 1;
+    text-align: center;
+}
+#logo img{
+    width: 50px !important;
+}
+nav{
+    flex: 2;
+}
+nav ul {
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px !important;
+    font-weight: 700;
+}
+nav ul li a:hover {
+    color: brown;
+    transition-duration: 0.5s;
+}
+nav #iconHam{
+    color: #fff;
+    line-height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+    display: none;
+}
+
+/*Article Section Css*/
+.webDesigner-text{
+    /* margin: 100px 0px; */
+    padding: 100px 30px;
+    text-align: center;
+    background-color: #EAEDED;
+}
+
+.webDesigner-text img{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+    border: 2px dashed brown; 
+}
+.webDesigner-text h4{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #A04000;
+}
+.webDesigner-text p{
+    text-align: justify;
+}
+
+/* Custom Style CSS Only Footer section */
+footer{
+    background-color: #312112;
+}
+.footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.copy-right{
+    align-self: flex-end;
+}
+.woner{
+    align-self: flex-end;
+}
+.follow-us h4{
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+}
+.follow-us i{
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.follow-us a{
+    color: #fff;
+}
+.follow-us a:hover{
+    color: rgb(213, 216, 18);
+    transition-duration: 0.5s;
+    font-size: 20px;
+}

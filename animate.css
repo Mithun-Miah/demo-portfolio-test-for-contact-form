@@ -1,0 +1,42 @@
+/* Designation Title for Animation Style About section */
+.myDesignationTitle {
+    position: relative;
+    font-weight: 900;
+    font-size: 1rem;
+  }
+  
+  .myDesignationTitle .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .myDesignationTitle .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  /* Title and Sub Title for Animation Style Skills section */
+.mySkillsItems {
+    position: relative;
+    font-weight: 900;
+    font-size: 1rem;
+  }
+  
+  .mySkillsItems .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .mySkillsItems .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
